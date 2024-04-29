@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "age-of-dataframes"
+version = "0.1.0"
+description = ""
+authors = ["Wouter Gins <wouter.gins@dataminded.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+polars = {extras = ["deltalake", "numpy", "pandas", "plot"], version = "^0.20.15"}
+requests = "^2.31.0"
+aiohttp = "^3.9.3"
+panels = "^0.3.1"
+scikit-learn = "^1.4.1.post1"
+great-tables = "^0.4.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.3"
+isort = "^5.13.2"
+ruff = "^0.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

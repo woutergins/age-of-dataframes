@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.venv
+data
+Images
+!data/.gitkeep
+.terraform
+__pycache__
+.benchmarks
+target
+*.png
